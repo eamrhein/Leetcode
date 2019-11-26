@@ -1,4 +1,3 @@
- */
 var lengthOfLongestSubstring = function(s) {
     let sub = "";
     let temp = "";
@@ -8,7 +7,7 @@ var lengthOfLongestSubstring = function(s) {
             if(temp.length > sub.length) {
              sub = temp;    
             }
-            temp = "";
+            temp = temp.slice(0);
         } else {
             temp += letter;
         }
